@@ -8,24 +8,34 @@
   <title>Weather App</title>
 </head>
 <body>
+
+  <div class="search-section">
+    <input class="search-text" type="text" name="searchText" placeholder="Search">
+    
+    <button class="search-button" type="submit">
+      <img class="search-icon" src="search-icon.png" alt="Search">
+    </button>
+  </div>
+  <div class="error"></div>
   
-  <div class="location">
-    <h1 class="location-timezone">
-      Timezone
-    </h1>
-    <img id="icon" src="" alt="Icon" >
-  </div>
-
-  <div class="temperature">
-    <div class="degree-section">
-      <h2 class="temperature-degree">34</h2>
-      <span>F</span>
-    </div>  
-    <div class="temperature-description">
-      Cool
+  <div class="main">
+    <div class="location">
+      <h1 class="location-timezone">
+        Delhi
+      </h1>
+      <img id="icon" src="sunny.png" alt="Sunny" >
     </div>
-  </div>
 
+    <div class="temperature">
+      <div class="degree-section">
+        <h2 class="temperature-degree">34</h2>
+        <span>°F</span>
+      </div>  
+      <div class="temperature-description">
+        Cool
+      </div>
+    </div>
+  </div>  
   <script src="app.js"></script>
 </body>
 </html>
